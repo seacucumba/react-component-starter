@@ -5,6 +5,7 @@
   "engines": {
     "npm": ">=3"
   },
+  "main": "src/index.js",
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
     "start": "npm-run-all --parallel test:watch open:src lint:watch",

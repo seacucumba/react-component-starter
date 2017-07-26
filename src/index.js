@@ -1,25 +1,13 @@
-/* eslint-disable import/default */
-
 import React from 'react';
-import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import './styles/styles.scss';
 
-render(
-  <AppContainer>
-    <h1>Your component goes here...</h1>
-  </AppContainer>,
-  document.getElementById('app')
-);
+class Component extends React.Component {
+  render () {
+    return (
+      <div className="component">
+        This is your's component content
+      </div>
+    );
+  }
+}
 
-// if (module.hot) {
-//   module.hot.accept('./components/Root', () => {
-//     const NewRoot = require('./components/Root').default;
-//     render(
-//       <AppContainer>
-//         <NewRoot/>
-//       </AppContainer>,
-//       document.getElementById('app')
-//     );
-//   });
-// }
+export default Component;
